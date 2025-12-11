@@ -295,7 +295,7 @@ To see the test, navigate to `./tests/test_contract.cairo`. Below is a break dow
     This imports the safe version of the contract interface from the project name, in our case, `counter`.
 
     - `IHelloStarknetSafeDispatcher`: The safe dispatcher is responsible for calling the contract’s functions. But unlike Solidity where a function call just returns the value directly, here every call returns a wrapper that either contains the returned value (if successful) or an error (if it failed).
- 
+
         Importantly, even if a contract call fails, execution continues within the test function. This allows the safe dispatcher to handle the error gracefully instead of reverting the entire transaction.
 
     - `IHelloStarknetSafeDispatcherTrait`: Exposes the callable functions in the contract for the dispatcher. Every function’s return value is wrapped, indicating it could succeed or fail.
