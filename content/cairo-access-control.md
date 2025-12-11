@@ -139,7 +139,7 @@ The order matters: each `{}` is filled by the corresponding argument after the s
 This gives developers more flexibility when debugging or handling errors. Instead of a static string, you can include runtime values in the message, something Solidity’s `require` doesn’t support directly.
 
 > The recommended method is to use `assert!`, even in production.
-> 
+>
 
 ## Supported Types in `assert!`
 
